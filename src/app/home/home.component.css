@@ -1,0 +1,30 @@
+.container-fluid {
+  width: 100%;
+  height: 80px;
+  background-color: #960244;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar-brand {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  size: 600px;
+  color: white;
+}
+
+.navbar-nav .nav-link { 
+  position: relative;
+  color: white;
+  padding: 0 .1rem 0 4rem;
+  font-family: "Work Sans", sans-serif;
+}
+.navbar-nav .nav-item:not(:first-child) .nav-link::before {
+  content: "";
+  position: absolute;
+  right: 87px; 
+  top: 0;
+  height: 2rem;
+  width: 3px;
+  border-radius: 25px;
+  background-color: white; 
+}
