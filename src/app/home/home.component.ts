@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CardCarouselComponent } from './card-carousel/card-carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardCarouselComponent, NavbarComponent],
+  imports: [CardCarouselComponent, NavbarComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
