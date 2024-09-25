@@ -3,6 +3,7 @@ import { CardCarouselComponent } from './card-carousel/card-carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppComponent } from '../app.component';
+import { SuccessfulGamesComponent } from './successful-games/successful-games.component';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import { AppComponent } from '../app.component';
     NavbarComponent,
     FooterComponent,
     AppComponent,
+    SuccessfulGamesComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
