@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { CardGroupComponent } from '../card-group-abount/card-group.component';
-
+import { CardGroupComponent } from '../card-group/card-group.component';
 
 @Component({
   selector: 'app-blog',
