@@ -1,7 +1,5 @@
 <div class="abount-container">
-    <!-- Listado de cards -->
     <app-card-info *ngIf="selectedCard" [cardData]="selectedCard"></app-card-info>
     <app-card-group-abount (cardSelected)="onCardSelected($event)"></app-card-group-abount>
-  
-    <!-- Detalle de la tarjeta seleccionada -->
+
   </div>
