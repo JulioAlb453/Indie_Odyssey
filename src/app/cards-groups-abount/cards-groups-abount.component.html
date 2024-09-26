@@ -1,112 +1,13 @@
 <div class="row row-cols-1 row-cols-md-3 g-1">
-  <div class="col">
-    <div class="card">
+  <div class="col" *ngFor="let card of cards">
+    <div class="card" (click)="onCardClick(card)">
       <div class="image-container">
-        <img
-          src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/UQYLSYHAQBJMPGI2NGCTYRQNFI.jpg"
-          class="card-img-top"
-          alt="..."
-        />
+        <img [src]="card.img" class="card-img-top" alt="..." />
       </div>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">{{ card.text }}</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <div class="image-container">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/73/Maddy_Thorson.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="image-container">
-        <img
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f7d14176115247.5e49b7c1bf1e7.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="image-container">
-        <img
-          src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/07/Yacht-Club-Games-Logo.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="image-container">
-        <img
-          src="https://i.blogs.es/44be54/notch080312/450_1000.webp"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card">
-      <div class="image-container">
-        <img
-          src="https://avatars.githubusercontent.com/u/60409971?v=4"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content.
-        </p>
-      </div>
-    </div>
-  </div>
-  
 </div>
