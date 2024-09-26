@@ -3,7 +3,7 @@
   justify-content: center;
   margin-left: 100px;
   margin-bottom: 60px;
-  max-width: 90%;
+  max-width: 100vh;
 }
 
 .card-content {
@@ -11,6 +11,7 @@
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+
 }
 
 .text-section {
@@ -48,12 +49,12 @@
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  transition: all 0.3s ease; /* Animación de hover */
+  transition: all 0.3s ease; 
 }
 
 .btn:hover {
-  background-color: black; /* Fondo negro al hacer hover */
-  color: white; /* Texto blanco al hacer hover */
+  background-color: black;
+  color: white; 
 }
 
 /* Sección de la imagen */

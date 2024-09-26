@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common'; // Importa CommonModule
 import { CardInfoComponent } from '../card-info/card-info.component';
 import { CardGroupAbountComponent } from '../cards-groups-abount/cards-groups-abount.component';
 import { CardGroupComponent } from "../card-group/card-group.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-abount',
   standalone: true,
-  imports: [CommonModule, CardInfoComponent, CardGroupAbountComponent, CardGroupComponent],
+  imports: [CommonModule, CardInfoComponent, CardGroupAbountComponent, CardGroupComponent, FooterComponent],
   templateUrl: './abount.component.html',
   styleUrls: ['./abount.component.css']
 })
