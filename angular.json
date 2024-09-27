@@ -89,11 +89,17 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
   "cli": {
-    "analytics": "c3337091-66b0-4c8b-b5a6-ca37849ce1a8"
+    "analytics": "c3337091-66b0-4c8b-b5a6-ca37849ce1a8",
+    "repo": "https://github.com/JulioAlb453/Indie_Odyssey",
+    "baseHref": "https://JulioAlb453.github.io/Indie_Odyssey/"
+
   }
 }
