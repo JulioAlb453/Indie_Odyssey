@@ -12,8 +12,7 @@
   padding: 20px;
 }
 
-.card,
-.card1 {
+.card {
   width: 80%;
   margin: 0 auto;
   border-radius: 8px;
@@ -21,9 +20,16 @@
   height: 400px;
 }
 
+.shadow-color1 {
+  box-shadow: 0 8px 16px rgba(166, 2, 79, 1);
+}
+
+.shadow-color2 {
+  box-shadow: 0 8px 16px rgb(119, 178, 208); 
+}
+
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(166, 2, 79);
 }
 
 .image-container {
@@ -43,15 +49,15 @@
 }
 
 .card-title {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 12px;
   color: #333;
 }
 
 .card-text {
-  font-size: 0.875rem;
-  color: #666;
+  font-size: 1rem;
+  color: #000000;
 }
 
 .row-cols-md-3 .col {

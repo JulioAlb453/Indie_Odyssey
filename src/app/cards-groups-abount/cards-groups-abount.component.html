@@ -1,8 +1,8 @@
 <div class="page-container">
   <div class="content-wrapper">
     <div class="row row-cols-1 row-cols-md-3 g-1 full-width">
-      <div class="col" *ngFor="let card of cards">
-        <div class="card" (click)="onCardClick(card)">
+      <div class="col" *ngFor="let card of cards; let i = index">
+        <div class="card" (click)="onCardClick(card)" [ngClass]="{'shadow-color1': i % 2 === 0, 'shadow-color2': i % 2 !== 0}">
           <div class="image-container">
             <img [src]="card.img" class="card-img-top" alt="..." />
           </div>
