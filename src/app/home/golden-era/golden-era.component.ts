@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class GoldenEraComponent {
   @Input() title: string = '';
-  @Input() description: string = '';
+  @Input() paragram1: string = '';
+  @Input() paragram2: string ="";
+  
   @Input() imageUrl: string = '';
 }

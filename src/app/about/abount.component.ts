@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Importa CommonModule
-import { CardInfoComponent } from '../card-info/card-info.component';
-import { CardGroupAbountComponent } from '../cards-groups-abount/cards-groups-abount.component';
-import { CardGroupComponent } from "../card-group/card-group.component";
+import { CardInfoComponent } from './card-info/card-info.component';
+import { CardGroupAbountComponent } from './cards-groups-abount/cards-groups-abount.component';
+import { CardGroupComponent } from "../blog/card-group/card-group.component";
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
