@@ -1,0 +1,35 @@
+<div class="content-wrapper">
+  <h1>{{title1}}</h1>
+  <div class="carousel-container">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+          <div class="d-flex justify-content-center">
+            <div *ngFor="let card of item.cards" class="card mx-2" style="width: 18rem">
+              <img [src]="card.img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ card.title }}</h5>
+                <p class="card-text">{{ card.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-3">
+        <a [href]="buttonLink" class="btn-link">
+          <button class="btn btn-primary">{{ buttonText }}</button>
+        </a>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>

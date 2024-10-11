@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./golden-era.component.css']
 })
 export class GoldenEraComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() imageUrl: string = '';
+   @Input() title: string = '';
+  @Input() paragram1: string = '';
+  @Input() paragram2: string = '';
 }
