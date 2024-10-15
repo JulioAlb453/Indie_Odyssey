@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../footer/footer.component'; // Importa CommonModule
+import { FooterComponent } from '../../footer/footer.component'; // Importa CommonModule
 
 @Component({
   selector: 'app-card-group-abount',

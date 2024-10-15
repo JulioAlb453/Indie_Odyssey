@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common'; // Importa CommonModule
 @Component({
   selector: 'app-card-carousel',
   standalone: true,
-  imports: [CommonModule], // Agrega CommonModule aquí
+  imports: [CommonModule], 
   templateUrl: './card-carousel.component.html',
   styleUrls: ['./card-carousel.component.css']
 })

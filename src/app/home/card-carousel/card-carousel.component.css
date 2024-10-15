@@ -5,6 +5,7 @@
   height:550px;
   margin: 70px auto 180px;
   position: relative; 
+  background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 16px rgb(112, 112, 112);
 }
 
