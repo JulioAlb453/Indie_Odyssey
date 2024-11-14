@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Importar CommonModule para usar *ngIf
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';  
 
 @Component({
   selector: 'app-card-info',
@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';  // Importar CommonModule para u
   styleUrls: ['./card-info.component.css']
 })
 export class CardInfoComponent {
-  @Input() cardData: any = null;
+  @Input() cardsInfo: any = null;
 }

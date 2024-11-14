@@ -1,28 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Importa CommonModule
 import { CardInfoComponent } from './card-info/card-info.component';
 import { CardGroupAbountComponent } from './cards-groups-abount/cards-groups-abount.component';
-import { CardGroupComponent } from "../blog/card-group/card-group.component";
-import { FooterComponent } from "../footer/footer.component";
+import { CardGroupComponent } from '../blog/card-group/card-group.component';
+import { FooterComponent } from '../standlone component/footer/footer.component';
 
 @Component({
   selector: 'app-abount',
   standalone: true,
-  imports: [CommonModule, CardInfoComponent, CardGroupAbountComponent, CardGroupComponent, FooterComponent],
+  imports: [
+    CommonModule,
+    CardInfoComponent,
+    CardGroupAbountComponent,
+    CardGroupComponent,
+    FooterComponent,
+  ],
   templateUrl: './abount.component.html',
-  styleUrls: ['./abount.component.css']
+  styleUrls: ['./abount.component.css'],
 })
 export class AbountComponent {
-  selectedCard: any = null;
+  selectedCardInfo: any = null;
 
-  onCardSelected(card: any) {
-    this.selectedCard = card;
-  }
-  cards = [
+  cardsInfo = [
     {
       title: '26 de febrero de 2016',
-      text: 'Stardew Valley fue creado completamente por el diseñador estadounidense de juegos indies Eric Barone, bajo el alias de ConcernedApe Stardew Valley originalmente empezó como un moderno juego de la serie Harvest Moon creado por fanes, ya que Barone pensaba que "la serie se había desmejorado progresivamente después de Harvest Moon: Back to Nature.',
-      img: 'https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/UQYLSYHAQBJMPGI2NGCTYRQNFI.jpg',
+      text: `Stardew Valley 
+      fue creado completamente por el diseñador estadounidense de
+       juegos indies Eric Barone, bajo el alias de ConcernedApe 
+       Stardew Valley originalmente empezó como un moderno juego 
+       de la serie Harvest Moon creado por fanes, ya que Barone pensaba
+        que "la serie se había desmejorado progresivamente después de Harvest Moon: Back to Nature.`,
+      img: 'https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w',
+     
     },
     {
       title: '24 de febrero de 2018',
@@ -50,4 +59,40 @@ export class AbountComponent {
       img: 'https://www.interactive.org/images/games_publishers/supergiant-15.jpg',
     },
   ];
+
+  cardsDescription = [
+    {
+      title: 'Eric Barone',
+      date: '26 /02/2016',
+      description: 'Creador de Stardew Valley',
+    },
+    {
+      title: 'Maddy Thorson',
+      date: '24/01/2018',
+      description: 'Creadora de Celeste',
+    },
+    {
+      title: 'Team Cherry',
+      date: '24/02/2017',
+      description: 'Creadores de Hollow Knight',
+    },
+    {
+      title: 'Toby Fox',
+      date: '15/10/2015',
+      description: 'Creadores de Undertale',
+    },
+    {
+      title: 'Edmund McMillen',
+      date: '28/10/2011',
+      description: 'Creadores de Undertale',
+    },
+    {
+      title: 'Amir Rao and Gavin Simon',
+      date: '17/10/2020',
+      description: 'Creadores de Undertale',
+    },
+  ];
+  onCardSelected(index: number) {
+    this.selectedCardInfo = this.cardsInfo[index];
+  }
 }

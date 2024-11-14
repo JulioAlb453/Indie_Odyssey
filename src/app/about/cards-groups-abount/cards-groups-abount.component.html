@@ -1,14 +1,12 @@
 <div class="page-container">
   <div class="content-wrapper">
-    <div class="row row-cols-1 row-cols-md-3 g-1 full-width">
-      <div class="col" *ngFor="let card of cards; let i = index">
-        <div class="card" (click)="onCardClick(card)" [ngClass]="{'shadow-color1': i % 2 === 0, 'shadow-color2': i % 2 !== 0}">
-          <div class="image-container">
-            <img [src]="card.img" class="card-img-top" alt="..." />
-          </div>
+    <div class="row row-cols-4 justify-content-center">
+      <div class="col" *ngFor="let card of cardsDescription; let i = index">
+        <div class="card" (click)="onCardClick(i)" [ngClass]="getCardShadowClass(i)">
           <div class="card-body">
             <h5 class="card-title">{{ card.title }}</h5>
-            <p class="card-text">{{ card.text }}</p>
+            <p class="card-text">{{ card.description }}</p>
+            <small class="text-muted">{{ card.date }}</small>
           </div>
         </div>
       </div>

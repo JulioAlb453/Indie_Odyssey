@@ -1,7 +1,20 @@
-<h1>Blog</h1>
-<div class="abount-container">
-  <app-card-info *ngIf="selectedCard" [cardData]="selectedCard"></app-card-info>
-  <app-card-group-abount
-    (cardSelected)="onCardSelected($event)"
-  ></app-card-group-abount>
+<div class="content">
+  <header class="content-header">
+    <h1 class="content-title">abount</h1>
+  </header>
+
+  <section class="content-body">
+    <article class="info-card">
+      <app-card-info *ngIf="selectedCardInfo" [cardsInfo]="selectedCardInfo">
+      </app-card-info>
+    </article>
+    <article class="card-group">
+      <app-card-group-abount
+        [cardsDescription]="cardsDescription"
+        (cardSelected)="onCardSelected($event)"
+      >
+        ></app-card-group-abount
+      >
+    </article>
+  </section>  
 </div>

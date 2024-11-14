@@ -9,8 +9,11 @@ import { CommonModule } from '@angular/common'; // Importa CommonModule
   styleUrls: ['./card-carousel.component.css']
 })
 export class CardCarouselComponent {
+  currentIndex = 0;
+
   @Input() carouselItems: any[] = [];
   @Input() title1: string = '';
   @Input() buttonText: string = 'Leer más';
   @Input() buttonLink: string = '/abount';
+  
 }

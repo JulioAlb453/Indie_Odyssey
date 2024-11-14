@@ -1,14 +1,13 @@
-<div *ngIf="cardData" class="card-container">
-    <div class="card-content">
-      <div class="text-section">
-        <h5 class="card-title">{{ cardData.title }}</h5>
-        <p class="card-text">
-          {{ cardData.text }}
-        </p>
-      </div>
-      <div class="image-section">
-        <img [src]="cardData.img" alt="Sample Image" />
-      </div>
+
+
+<div *ngIf="cardsInfo" class="card-container">
+  <div class="card-content">
+    <div class="text-section">
+      <h5 class="card-title">{{ cardsInfo.title }}</h5>
+      <p class="card-text">{{ cardsInfo.text }}</p>
+    </div>
+    <div class="image-section">
+      <img [src]="cardsInfo.img" alt="Imagen del juego" />
     </div>
   </div>
-  
+</div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CardCarouselComponent } from './card-carousel/card-carousel.component';
-import { FooterComponent } from '../footer/footer.component';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../standlone component/footer/footer.component';
+import { NavbarComponent } from '../standlone component/navbar/navbar.component';
 import { SuccessfulGamesComponent } from './successful-games/successful-games.component';
 import { GoldenEraComponent } from './golden-era/golden-era.component';
 

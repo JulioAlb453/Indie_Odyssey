@@ -15,8 +15,9 @@ export class BlogComponent {
     {
       cards: [
         {
-          img: 'https://blog.crackthecode.la/wp-content/uploads/2022/10/unnamed.png',
+          img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKl07XZ91dAJ0fl-999pZj8WX4_SPp3roD-w&s',
           title: 'Minecraft',
+          date:"19/02/2024",
           text: `Marcus Persson, también conocido como Notch, lanzó lo que
             inicialmente llamó «Cave Game» en 2009. Este fue lanzado en la PC y
             fue atractivo para las personas a las que les gustaba codificar y
@@ -28,6 +29,7 @@ export class BlogComponent {
         {
           img: 'https://picodotdev.github.io/blog-bitix/2021/07/analisis-guia-y-consejos-del-juego-roguelike-darkest-dungeon/images/darkest-dungeon_hu4435031814995739645.webp',
           title: 'Darkest Dungeon',
+          date:"19/02/2024",
           text: `Hace ya más de dos años que un pequeño estudio, Red Hook, nos
             sorprendiera con un videojuego nacido en Kickstarter, con Tyler
             Sigman a la cabeza. Este oriundo de Seattle no presentaba unas
@@ -44,6 +46,7 @@ export class BlogComponent {
         {
           img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Ori_and_the_Blind_Forest_Logo.jpg/220px-Ori_and_the_Blind_Forest_Logo.jpg',
           title: 'Ori and the Blind Forest',
+          date:"19/02/2024",
           text: `El desarrollo de Ori and the Blind Forest nació de un pequeño equipo
             compuesto por profesionales contrastados del sector que decidieron
             unirse para crear un videojuego diferente. Tomando como referencia
@@ -61,6 +64,7 @@ export class BlogComponent {
         {
           img: 'https://uvejuegos.com/img/caratulas/59068/Specter-of-Torment-Logo.jpg',
           title: 'Shovel Knight',
+          date:"19/02/2024",
           text: `Shovel Knight es el primer videojuego desarrollado por Yacht Club
             Games, dirigido por Sean Velasco . Velasco ha declarado que tomó
             inspiración en gran forma de juegos como NES, específicamente de
@@ -77,6 +81,7 @@ export class BlogComponent {
         {
           img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CVCbU5M5FOczTMi6u6HfEQfjTONRSrcnzw&s',
           title: 'Super Meat Boy',
+          date:"19/02/2024",
           text: ` Meat Boy empezó como un juego en Flash creado por Edmund McMillen y
             programado por Jonathan McEntee, publicado en Newgrounds el 5 de
             octubre de 2008. Ha conseguido más de 8400000 visitas en Newgrounds

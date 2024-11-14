@@ -1,10 +1,19 @@
-.abount-container{
-  height: 100%;
-  background-color: rgb(255, 255, 255);
-}
+.content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    text-align: center;  
+  }
+  .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-h1{
-  padding-top: 25px;
-  font-family: "Cabin", sans-serif;
-  font-size: 60px; 
-}
+  .content-body{
+    padding-top: 5rem;
+  }
